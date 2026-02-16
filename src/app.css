@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source "../node_modules/flowbite";
+@source "../node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}";
+@source "./**/*.svelte";
+
+@plugin "flowbite/plugin";
+
+@theme {
+  --accent: #ff4500;
+}
