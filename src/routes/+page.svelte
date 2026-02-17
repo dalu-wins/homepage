@@ -1,6 +1,7 @@
- <script lang="ts">
-    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, DarkMode, ImagePlaceholder, Skeleton, TextPlaceholder } from "flowbite-svelte";
+<script lang="ts">
+    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, DarkMode, ImagePlaceholder, Skeleton, TextPlaceholder, Button, Timeline, TimelineItem, Card } from "flowbite-svelte";
     import { Footer, FooterCopyright, FooterLinkGroup, FooterLink } from "flowbite-svelte";
+    import { ArrowRightOutline } from "flowbite-svelte-icons";
 </script>
 
 <Navbar>
@@ -10,21 +11,69 @@
     <div class="flex items-center gap-2 md:order-2">
         <NavHamburger />
         <NavUl class="md:flex-row md:gap-6 px-2">
-            <NavLi href="/">Profile</NavLi>
-            <NavLi href="/projects/">Projects</NavLi>
-            <NavLi href="/curriculum/">Curriculum</NavLi>
-            <NavLi href="/contact/">Contact</NavLi>
+            <NavLi href="#profile">Profile</NavLi>
+            <NavLi href="#projects">Projects</NavLi>
+            <NavLi href="#curriculum">Curriculum</NavLi>
         </NavUl>
         <DarkMode />
     </div>
 </Navbar>
 
-<Footer class="absolute start-0 bottom-0 z-20 w-full border-t border-gray-300 bg-gray-200 p-4 shadow-sm md:flex md:items-center md:justify-between md:p-6 dark:border-gray-600 dark:bg-gray-800 rounded-b-0">
-    <FooterCopyright href="/" by="Daniil Wins" year={2026} />
-    <FooterLinkGroup class="mt-3 flex flex-wrap items-center text-sm text-gray-500 sm:mt-0 dark:text-gray-400">
-        <FooterLink href="/">Profile</FooterLink>
-        <FooterLink href="/projects/" class="ms-4 md:ms-6">Projects</FooterLink>
-        <FooterLink href="/curriculum/" class="ms-4 md:ms-6">Curriculum</FooterLink>
-        <FooterLink href="/contact/" class="ms-4 md:ms-6">Contact</FooterLink>
-    </FooterLinkGroup>
+<div class="container mx-auto px-4">
+    <h1 class="text-4xl font-bold dark:text-white pt-10 mb-10" id="profile">Profile</h1>
+    <div>
+        <TextPlaceholder class="mb-6" />
+        <Button color="alternative">Learn more<ArrowRightOutline class="ms-2 h-5 w-5" /></Button>
+    </div>
+
+    <h1 class="text-4xl font-bold dark:text-white pt-10 mb-10" id="projects">Projects</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <Card class="p-6 mb-6">
+            <ImagePlaceholder size="sm" class="mb-4" />
+            <TextPlaceholder class="mb-2" />
+            <Button class="bg-[var(--github-button)] mt-4">GitHub<ArrowRightOutline class="ms-2 h-5 w-5" /></Button>
+        </Card>
+        <Card class="p-6 mb-6">
+            <ImagePlaceholder size="sm" class="mb-4" />
+            <TextPlaceholder class="mb-2" />
+            <Button class="bg-[var(--github-button)] mt-4">GitHub<ArrowRightOutline class="ms-2 h-5 w-5" /></Button>
+        </Card>
+        <Card class="p-6 mb-6">
+            <ImagePlaceholder size="sm" class="mb-4" />
+            <TextPlaceholder class="mb-2" />
+            <Button class="bg-[var(--github-button)] mt-4">GitHub<ArrowRightOutline class="ms-2 h-5 w-5" /></Button>
+        </Card>
+                <Card class="p-6 mb-6">
+            <ImagePlaceholder size="sm" class="mb-4" />
+            <TextPlaceholder class="mb-2" />
+            <Button class="bg-[var(--github-button)] mt-4">GitHub<ArrowRightOutline class="ms-2 h-5 w-5" /></Button>
+        </Card>
+    </div>
+
+    <h1 class="text-4xl font-bold pt-10 mb-10 dark:text-white" id="curriculum">Curriculum</h1>
+    <Timeline>
+        <TimelineItem title="Application UI code in Tailwind CSS" date="February 2022">
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.
+            </p>
+            <Button color="alternative">Learn more<ArrowRightOutline class="ms-2 h-5 w-5" /></Button>
+        </TimelineItem>
+        <TimelineItem title="Application UI code in Tailwind CSS" date="March 2022">
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+            All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.
+            </p>
+        </TimelineItem>
+        <TimelineItem title="Application UI code in Tailwind CSS" date="April 2022">
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements built on top of Tailwind CSS.</p>
+        </TimelineItem>
+    </Timeline>
+</div>
+
+<Footer class="m-5 mt-16 bg-gray-100">
+<FooterCopyright href="/" by="Daniil Wins" year={2026} />
+<FooterLinkGroup class="mt-3 flex flex-wrap items-center text-sm text-gray-500 sm:mt-0 dark:text-gray-400">
+    <FooterLink href="/">Sourcecode</FooterLink>
+    <FooterLink href="/">Licensing</FooterLink>
+    <FooterLink href="#profile">Contact</FooterLink>
+</FooterLinkGroup>
 </Footer>
