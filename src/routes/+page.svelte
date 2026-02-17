@@ -10,12 +10,14 @@
         NavHamburger,
         DarkMode,
         Button,
+        Skeleton,
         Timeline,
         TimelineItem,
         Card,
         Badge,
         List,
         Li,
+        Spinner,
     } from "flowbite-svelte";
     import {
         Footer,
@@ -24,6 +26,15 @@
         FooterLink,
     } from "flowbite-svelte";
     import { ArrowRightOutline, CodeOutline, MailBoxOutline, MessagesOutline } from "flowbite-svelte-icons";
+    let imageLoaded = false;
+let imgElement: HTMLImageElement;
+
+// Funktion für bereits geladene Bilder (Cache)
+function checkCache(node: HTMLImageElement) {
+    if (node.complete) {
+        imageLoaded = true;
+    }
+}
 </script>
 
 <Navbar>
@@ -44,11 +55,19 @@
 
 <div class="container mx-auto px-4">
     <div class="flex flex-col md:flex-row justify-center items-stretch gap-12 pt-10 mb-12 w-full" id="profile">
-        <div class="flex-shrink-0 flex items-center justify-center">
+        <div class="flex-shrink-0 relative w-48 md:w-64 aspect-square">
+            {#if !imageLoaded}
+                <div class="absolute inset-0 z-20 flex items-center justify-center bg-gray-50 dark:bg-gray-800 rounded-2xl ring-4 ring-gray-100 dark:ring-gray-700 shadow-xl">
+                    <Spinner size="10" color="blue" />
+                </div>
+            {/if}
+
             <img 
                 src={profile.avatarUrl} 
                 alt={profile.username}
-                class="rounded-2xl object-cover w-48 md:w-auto md:h-full max-h-[300px] ring-4 ring-gray-100 dark:ring-gray-700 shadow-xl"
+                use:checkCache
+                on:load={() => imageLoaded = true}
+                class="rounded-2xl object-cover w-full h-full ring-4 ring-gray-100 dark:ring-gray-700 shadow-xl transition-opacity duration-500 {imageLoaded ? 'opacity-100' : 'opacity-0'}"
             />
         </div>
 
@@ -131,7 +150,7 @@
     </Timeline>
 </div>
 
-<Footer class="m-3 mt-16 bg-gray-100">
+<Footer class="mt-20 bg-gray-100 rounded-none">
     <FooterCopyright href="/" by="Daniil Wins" year={2026} />
     <FooterLinkGroup class="mt-3 flex flex-wrap items-center text-sm text-gray-500 sm:mt-0 dark:text-gray-400">
         <FooterLink href="https://github.com/dalu-wins/svelte-homepage">
