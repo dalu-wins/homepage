@@ -7,8 +7,7 @@ export const projects = [
         extraButton: {
             label: 'Download APK',
             url: 'https://github.com/dalu-wins/sc-news/releases/latest'
-        },
-        role: 'Sole Developer',
+        }
     },
     {
         name: 'SC-News-API',
