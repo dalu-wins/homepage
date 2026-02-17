@@ -7,7 +7,7 @@ export const curriculum = [
     {
         title: "Digital Product Passport",
         date: "September 2024",
-        description: "Participated in a group project at KIT, where we developed an Android application to track the lifecycle of products and promote sustainability."
+        description: "Participated in a group project to develop an app to track the lifecycle of products and promote sustainability."
     },
     {
         title: "Student Assistant",
