@@ -6,6 +6,7 @@ on:
       - '.github/**'
       - 'README.md'
       - 'LICENSE'
+      - '.releaserc'
   workflow_dispatch:
 
 jobs:
@@ -30,6 +31,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Zip Build Artifacts
+        run: zip -r static-site.zip build/
+
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v6
         env:
@@ -43,4 +47,4 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: static-site
-          path: build/
+          path: build.zip
