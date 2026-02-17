@@ -11,7 +11,7 @@
         >
     </NavBrand>
     <div class="flex items-center gap-2 md:order-2">
-        <NavHamburger class="focus-outline-none"/>
+        <NavHamburger />
         <NavUl class="md:flex-row md:gap-6 px-2">
             <NavLi href="#profile">Profile</NavLi>
             <NavLi href="#projects">Projects</NavLi>
