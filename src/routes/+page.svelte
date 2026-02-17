@@ -14,7 +14,6 @@
         TimelineItem,
         Card,
         Badge,
-        Avatar,
         List,
         Li,
     } from "flowbite-svelte";
@@ -24,7 +23,7 @@
         FooterLinkGroup,
         FooterLink,
     } from "flowbite-svelte";
-    import { ArrowRightOutline, MailBoxOutline, MessagesOutline } from "flowbite-svelte-icons";
+    import { ArrowRightOutline, CodeOutline, MailBoxOutline, MessagesOutline } from "flowbite-svelte-icons";
 </script>
 
 <Navbar>
@@ -69,6 +68,8 @@
                                 <MailBoxOutline class="w-5 h-5 me-3 text-primary-600" />
                             {:else if contact.type === 'discord'}
                                 <MessagesOutline class="w-5 h-5 me-3 text-primary-600" />
+                            {:else if contact.type === 'github'}
+                                <CodeOutline class="w-5 h-5 me-3 text-primary-600" />
                             {/if}
                             
                             <span class="w-20 text-primary-600 font-medium">{contact.label}</span>

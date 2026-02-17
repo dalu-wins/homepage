@@ -14,6 +14,12 @@ export const profile = {
             value: 'wins2023',
             href: 'https://discord.com/users/307176535423582210',
             type: 'discord'
+        },
+        {
+            label: 'github',
+            value: 'dalu-wins',
+            href: 'https://github.com/dalu-wins',
+            type: 'github'
         }
     ]
 };
