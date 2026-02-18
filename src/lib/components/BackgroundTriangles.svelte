@@ -4,7 +4,7 @@
     import { EyeOutline, EyeSlashOutline } from 'flowbite-svelte-icons';
 
     export let count = 8;
-    let visible = false;
+    let visible = true;
 
     function random(seed: number) {
         const x = Math.sin(seed) * 10000;
@@ -30,7 +30,7 @@
             duration: dur,
             delay: -((((i * 3) % count) / count) + (random(s + 2) - 0.5) * 0.2) * dur,
             size: 50 + (left / 100) * 180,
-            color: `hsl(${random(s + 3) * 360}, 25%, 50%)`,
+            color: `hsl(${random(s + 3) * 360}, 45%, 60%)`,
             rotation: (random(s + 4) > 0.5 ? 1 : -1) * (180 + random(s + 2) * 90)
         };
     });
@@ -57,10 +57,15 @@
         <div class="absolute right-0 w-1/3 h-full">
             {#each triangles as t}
                 <div class="triangle" 
-                    style="left:{t.left}%; animation-delay:{t.delay}s; animation-duration:{t.duration}s; 
-                           border-left-width:{t.size}px; border-right-width:{t.size}px; 
-                           border-bottom-width:{t.size * 1.5}px; border-bottom-color:{t.color}; 
-                           --rot:{t.rotation}deg;">
+                    style="left:{t.left}%; 
+                            animation-delay:{t.delay}s; 
+                            animation-duration:{t.duration}s; 
+                            border-left-width:{t.size}px; 
+                            border-right-width:{t.size}px; 
+                            border-bottom-width:{t.size * 1.5}px; 
+                            border-bottom-color:{t.color}; 
+                            filter: drop-shadow(0 0 10px {t.color});
+                            --rot:{t.rotation}deg;">
                 </div>
             {/each}
         </div>
@@ -80,7 +85,7 @@
     }
     @keyframes rise {
         0% { transform: translateY(0) rotate(0deg); opacity: 0; }
-        10%, 90% { opacity: 0.75; }
+        10%, 90% { opacity: 1; }
         100% { transform: translateY(-130vh) rotate(var(--rot)); opacity: 0; }
     }
 </style>
