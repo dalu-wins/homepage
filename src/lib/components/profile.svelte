@@ -80,6 +80,8 @@
                         >
                         <a
                             href={contact.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             class="hover:underline text-blue-600 dark:text-blue-500"
                         >
                             {contact.value}
