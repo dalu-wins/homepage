@@ -24,14 +24,14 @@
     const triangles = Array.from({ length: count }).map((_, i) => {
         const s = i + 42;
         const left = (i * (100 / count)) + (random(s) * (100 / count) * 0.6);
-        const dur = 25 + random(s + 1) * 10;
+        const dur = 25 + random(s + 1) * 100;
         return {
             left,
             duration: dur,
             delay: -((((i * 3) % count) / count) + (random(s + 2) - 0.5) * 0.2) * dur,
             size: 50 + (left / 100) * 180,
-            color: `hsl(${random(s + 3) * 360}, 25%, 70%)`,
-            rotation: (random(s + 4) > 0.5 ? 1 : -1) * (360 + random(s + 5) * 360)
+            color: `hsl(${random(s + 3) * 360}, 25%, 50%)`,
+            rotation: (random(s + 4) > 0.5 ? 1 : -1) * (180 + random(s + 2) * 90)
         };
     });
 </script>

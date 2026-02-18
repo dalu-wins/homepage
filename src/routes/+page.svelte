@@ -12,7 +12,7 @@
     <div class="container mx-auto px-8 grow flex flex-col justify-center">
         <main>
             <Profile />
-            <h1 class="text-4xl font-bold dark:text-white pt-14 mb-10 text-center md:text-start" id="projects">
+            <h1 class="text-4xl font-bold dark:text-white pt-8 mb-8 text-center md:text-start" id="projects">
                 Featured Projects
             </h1>
             <Projects />
