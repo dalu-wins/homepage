@@ -5,12 +5,26 @@
 
 <Timeline>
     {#each curriculum as item}
-        <TimelineItem title={item.title} date={item.date}>
-            <p
-                class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
-            >
-                {item.description}
-            </p>
+        <TimelineItem title={item.title} date={item.date} class="custom-date-item">
+            <p class="text-base font-normal text-(--timeline-description) dark:text-(--timeline-description-dark)">{item.description}</p>
         </TimelineItem>
     {/each}
 </Timeline>
+
+<style>
+    :global(.custom-date-item time) {
+        color: var(--timeline-date) !important;
+    }
+
+    :global(.dark .custom-date-item time) {
+        color: var(--timeline-date-dark) !important;
+    }
+
+    :global(.custom-date-item h3) {
+        color: var(--timeline-title) !important;
+    }
+
+    :global(.dark .custom-date-item h3) {
+        color: var(--timeline-title-dark) !important;
+    }
+</style>

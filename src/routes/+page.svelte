@@ -8,19 +8,19 @@
 
 <Navbar />
 
-<div class="container mx-auto px-4">
-    
-    <Profile />
+<div class="container mx-auto px-8">
 
-    <h1 class="text-4xl font-bold dark:text-white pt-10 mb-10" id="projects">
-        Projects
-    </h1>
-    <Projects />
-
-    <h1 class="text-4xl font-bold pt-10 mb-10 dark:text-white" id="curriculum">
-        Curriculum
-    </h1>
-    <Curriculum />
+    <main>
+        <Profile />
+        <h1 class="text-4xl font-bold dark:text-white pt-10 mb-10" id="projects">
+            Projects
+        </h1>
+        <Projects />
+        <h1 class="text-4xl font-bold pt-10 mb-10 dark:text-white" id="curriculum">
+            Curriculum
+        </h1>
+        <Curriculum />
+    </main>
 
 </div>
 

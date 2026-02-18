@@ -44,12 +44,12 @@
     >
         <div>
             <h2
-                class="text-3xl font-extrabold text-gray-900 dark:text-white mb-3"
+                class="text-3xl font-extrabold text-(--primary-text) dark:text-(--primary-text-dark) mb-3"
             >
                 {profile.username}
             </h2>
             <p
-                class="text-lg font-light text-gray-500 dark:text-gray-400 leading-relaxed"
+                class="text-lg font-light text-(--secondary-text) dark:text-(--secondary-text-dark) leading-relaxed"
             >
                 {profile.description}
             </p>

@@ -11,6 +11,50 @@
 @plugin "flowbite/plugin";
 
 @theme {
-  --github-button: #2B3137;
-  --github-button-dark: #2DBA4E;
+  --bg-default: #F9F9F9;
+  --bg-default-dark: #1B1B1B;
+
+  --bg-navbar: #FF000000;
+  --bg-navbar-dark: #FF000000;
+  --navbar: #000000;
+  --navbar-dark: #FFFFFF;
+
+  --primary-text: #000000;
+  --primary-text-dark: #FFFFFF;
+  --secondary-text: #4B4B4B;
+  --secondary-text-dark: #B3B3B3;
+
+  --bg-card: #FFFFFF;
+  --bg-card-dark: #2A2A2A;
+  --card-title: #000000;
+  --card-title-dark: #FFFFFF;
+  --card-text: #4B4B4B;
+  --card-text-dark: #B3B3B3;
+
+  --bg-github-button: #2B3137;
+  --bg-github-button-dark: #2DBA4E;
+  --github-button: #FFFFFF;
+  --github-button-dark: #000000;
+
+  --bg-extra-button: #FF000000;
+  --bg-extra-button-dark: #FF000000;
+  --extra-button: #000000;
+  --extra-button-dark: #FFFFFF;
+
+  --bg-badge: #D4F6CA;
+  --bg-badge-dark: #367A21;
+  --badge: #367A21;
+  --badge-dark: #D4F6CA;
+
+  --timeline-date: #4B4B4B;
+  --timeline-date-dark: #B3B3B3;
+  --timeline-title: #000000;
+  --timeline-title-dark: #FFFFFF;
+  --timeline-description: #4B4B4B;
+  --timeline-description-dark: #B3B3B3;
+
+  --bg-footer: #E0E0E0;
+  --bg-footer-dark: #333333;
+  --footer: #4B4B4B;
+  --footer-dark: #B3B3B3;
 }

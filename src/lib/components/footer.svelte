@@ -2,10 +2,10 @@
     import { Footer, FooterCopyright, FooterLinkGroup, FooterLink } from "flowbite-svelte";
 </script>
 
-<Footer class="m-3 mt-20 bg-gray-100">
+<Footer class="m-3 mt-20 bg-(--bg-footer) dark:bg-(--bg-footer-dark) text-(--footer) dark:text-(--footer-dark)">
     <FooterCopyright href="/" by="Daniil Wins" year={2026} />
     <FooterLinkGroup
-        class="mt-3 flex flex-wrap items-center text-sm text-gray-500 sm:mt-0 dark:text-gray-400"
+        class="mt-3 flex flex-wrap items-center text-sm sm:mt-0"
     >
         <FooterLink href="https://github.com/dalu-wins/svelte-homepage">
             sourcecode

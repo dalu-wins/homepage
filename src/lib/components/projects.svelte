@@ -9,20 +9,20 @@
 >
     {#each projects as project}
         <Card
-            class="relative p-6 mb-6 flex flex-col items-center text-center md:items-start md:text-left w-full max-w-sm md:max-w-full"
+            class="relative bg-(--bg-card) dark:bg-(--bg-card-dark) p-6 mb-6 flex flex-col items-center text-center md:items-start md:text-left w-full max-w-sm md:max-w-full"
         >
             {#if project.badge}
-                <Badge color="purple" class="absolute top-3 right-3">
+                <Badge class="absolute top-3 right-3 bg-(--bg-badge) dark:bg-(--bg-badge-dark) text-(--badge) dark:text-(--badge-dark)">
                     {project.badge}
                 </Badge>
             {/if}
 
             <div class="text-4xl mb-4">{project.icon}</div>
 
-            <h3 class="text-xl font-bold mb-2 dark:text-white">
+            <h3 class="text-xl font-bold mb-2 text-(--card-title) dark:text-(--card-title-dark)">
                 {project.name}
             </h3>
-            <p class="text-gray-600 dark:text-gray-400 mb-6 grow">
+            <p class="text-(--card-text) dark:text-(--card-text-dark) mb-6 grow">
                 {project.description}
             </p>
 
@@ -30,7 +30,7 @@
                 <Button
                     href={project.extraButton.url}
                     color="alternative"
-                    class="w-full"
+                    class="w-full bg-(--bg-extra-button) dark:bg-(--bg-extra-button-dark) text-(--extra-button) dark:text-(--extra-button-dark)"
                 >
                     {project.extraButton.label}
                 </Button>
@@ -38,7 +38,7 @@
 
             <Button
                 href={project.url}
-                class="bg-(--github-button) dark:bg-(--github-button-dark) dark:text-white w-full mt-3"
+                class="bg-(--bg-github-button) dark:bg-(--bg-github-button-dark) dark:text-white w-full mt-3"
             >
                 GitHub <ArrowRightOutline class="ms-2 h-5 w-5" />
             </Button>

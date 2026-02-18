@@ -3,10 +3,10 @@
 
 </script>
 
-<Navbar class="p-6">
+<Navbar class="p-6 text-(--navbar) dark:text-(--navbar-dark) bg-(--bg-navbar) dark:bg-(--bg-navbar-dark)">
     <NavBrand href="/">
         <span
-            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            class="self-center text-xl font-semibold whitespace-nowrap"
             >homepage</span
         >
     </NavBrand>
