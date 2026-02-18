@@ -55,6 +55,8 @@
 
   --bg-footer: #E0E0E0;
   --bg-footer-dark: #333333;
-  --footer: #4B4B4B;
-  --footer-dark: #B3B3B3;
+  --footer-links: #636363;
+  --footer-links-dark: ##9B9B9B;
+  --footer: #636363;
+  --footer-dark: #9B9B9B;
 }
