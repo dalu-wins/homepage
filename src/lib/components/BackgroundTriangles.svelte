@@ -53,7 +53,7 @@
 </div>
 
 {#if visible}
-    <div class="hidden lg:block absolute inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="hidden lg:block fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <div class="absolute right-0 w-1/3 h-full">
             {#each triangles as t}
                 <div class="triangle" 
