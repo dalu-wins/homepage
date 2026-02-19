@@ -5,17 +5,12 @@
 </script>
 
 <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 w-full justify-items-center mb-6 z-10"
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 w-full justify-items-center z-10"
 >
     {#each projects as project}
         <Card
             class="relative p-8 flex flex-col items-center text-center md:items-start md:text-left z-20
-                bg-white/20 dark:bg-black/20
-                backdrop-blur-md dark:backdrop-blur-2xl
-                drop-shadow-xl
-                border border-white/20 dark:border-white/3
-                ring-1 ring-white/10 dark:ring-white/2
-                backdrop-saturate-150 dark:backdrop-saturate-150"
+                glass drop-shadow-md max-w-none rounded-4xl"
         >
 
             <div class="text-4xl mb-2">{project.icon}</div>

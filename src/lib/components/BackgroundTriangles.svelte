@@ -39,33 +39,9 @@
     });
 </script>
 
-<div class="hidden lg:flex justify-end px-4 py-2 relative z-20">
-    <Button
-        pill
-        color="alternative"
-        size="xs"
-        onclick={toggle}
-        class="
-        focus:ring-0 dark:focus:ring-0
-        hover:bg-transparent dark:hover:bg-transparent
-        text-(--secondary-text) dark:text-(--secondary-text-dark)
-        hover:text-black dark:hover:text-white
-        bg-white/20 dark:bg-black/20 
-        backdrop-blur-md dark:backdrop-blur-2xl 
-        border border-white/10 dark:border-white/10
-        shadow-lg"
-    >
-        {#if visible}
-            <EyeSlashOutline class="w-4 h-4 me-2" /> Hide FX
-        {:else}
-            <EyeOutline class="w-4 h-4 me-2" /> Show FX
-        {/if}
-    </Button>
-</div>
-
 {#if visible}
     <div
-        class="hidden lg:block fixed inset-0 pointer-events-none z-0 overflow-hidden"
+        class="fixed inset-0 pointer-events-none z-0 overflow-hidden"
     >
         <div class="absolute right-0 w-1/3 h-full">
             {#each triangles as t}
