@@ -9,7 +9,7 @@
         w-fit
         backdrop-blur-md dark:backdrop-blur-2xl
         bg-white/20 dark:bg-black/20
-        p-12
+        p-12 pb-4
         shadow-2xl
         border border-white/20 dark:border-white/3
         ring-1 ring-white/10 dark:ring-white/2

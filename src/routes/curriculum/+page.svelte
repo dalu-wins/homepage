@@ -10,7 +10,7 @@
 
     <main class="container mx-auto p-8 grow flex items-center relative z-10">
         <div class="grid lg:grid-cols-1 w-full items-center">
-            <h1 class="text-4xl font-bold pt-4 mb-10 dark:text-white">Curriculum</h1>
+            <h1 class="text-4xl font-bold mb-10 dark:text-white mt-4">Curriculum</h1>
             <Curriculum />
         </div>
     </main>

@@ -39,7 +39,7 @@
     });
 </script>
 
-<div class="hidden lg:flex justify-end px-8 pb-4 relative z-50">
+<div class="hidden lg:flex justify-end px-4 py-2 relative z-20">
     <Button
         pill
         color="alternative"
@@ -48,6 +48,7 @@
         class="
         focus:ring-0 dark:focus:ring-0
         hover:bg-transparent dark:hover:bg-transparent
+        text-(--secondary-text) dark:text-(--secondary-text-dark)
         hover:text-black dark:hover:text-white
         bg-white/20 dark:bg-black/20 
         backdrop-blur-md dark:backdrop-blur-2xl 

@@ -16,7 +16,7 @@
 </script>
 
 <div
-    class="flex flex-col md:flex-row justify-center gap-6 md:gap-12 w-full items-center md:items-center lg:justify-start z-10 mt-16 mb-6
+    class="flex flex-col md:flex-row justify-center gap-6 md:gap-12 w-full items-center md:items-center lg:justify-start z-10 mt-8 mb-6
                 bg-white/20 dark:bg-black/20
                 backdrop-blur-md dark:backdrop-blur-2xl
                 drop-shadow-xl
