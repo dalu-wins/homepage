@@ -5,7 +5,7 @@
 </script>
 
 <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 w-full justify-items-center mb-6"
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 w-full justify-items-center mb-6 z-10"
 >
     {#each projects as project}
         <Card

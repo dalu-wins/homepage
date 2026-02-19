@@ -11,11 +11,12 @@
 
 <Navbar
     class="text-(--navbar) dark:text-(--navbar-dark)
-    backdrop-blur-md dark:backdrop-blur-2xl
-    border-b border-white/10
-    bg-white/20 dark:bg-black/20
-    z-21
-    shadow-md"
+        backdrop-blur-md dark:backdrop-blur-2xl
+        border-b border-white/10 dark:border-white/10
+        bg-white/20 dark:bg-black/20
+        shadow-md
+        z-20
+        max-md:backdrop-blur-none dark:max-md:backdrop-blur-none"
 >
     <NavBrand href="/">
         <span class="self-center text-xl font-semibold whitespace-nowrap m-4"
@@ -27,11 +28,12 @@
             class="hover:bg-(--bg-nav-hover) dark:hover:bg-(--bg-nav-hover-dark)"
         />
         <NavUl
-            class="md:flex-row px-2"
+            class="md:flex-row px-2 custom-nav-ul"
+            transition={() => ({})}
             ulClass="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium 
-                    bg-(--bg-hamburger) dark:bg-(--bg-hamburger-dark)
-                    md:bg-transparent md:dark:bg-transparent
-                    border-(--hamburger-border) dark:border-(--hamburger-border-dark) md:border-0"
+            max-md:backdrop-blur-md max-md:dark:backdrop-blur-2xl
+            max-md:border max-md:border-white/10 max-md:dark:border-white/10
+            max-md:bg-white/20 max-md:dark:bg-black/20"
         >
             <NavLi
                 href="/"
@@ -50,8 +52,7 @@
                 text-(--secondary-text) dark:text-(--secondary-text-dark)
                 hover:bg-(--bg-nav-hover) md:hover:bg-transparent
                 dark:hover:bg-(--bg-nav-hover-dark) md:dark:hover:bg-transparent
-                hover:text-black hover:dark:text-white"
-                >Curriculum</NavLi
+                hover:text-black hover:dark:text-white">Curriculum</NavLi
             >
         </NavUl>
         <DarkMode
@@ -59,13 +60,3 @@
         />
     </div>
 </Navbar>
-
-<style>
-    :global(.custom-nav-ul div) {
-        background-color: var(--bg-hamburger-div) !important;
-    }
-
-    :global(.dark .custom-nav-ul div) {
-        background-color: var(--bg-hamburger-div-dark) !important;
-    }
-</style>
