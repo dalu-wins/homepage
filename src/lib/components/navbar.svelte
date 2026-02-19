@@ -12,7 +12,8 @@
 <Navbar
     class="text-(--navbar) dark:text-(--navbar-dark)
         backdrop-blur-md dark:backdrop-blur-2xl
-        border-b border-white/10 dark:border-white/10
+        border border-white/20 dark:border-white/3
+        ring-1 ring-white/10 dark:ring-white/2
         bg-white/20 dark:bg-black/20
         shadow-md
         z-20
