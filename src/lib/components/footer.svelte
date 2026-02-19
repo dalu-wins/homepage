@@ -1,8 +1,14 @@
 <script>
-    import { Footer, FooterCopyright, FooterLinkGroup, FooterLink } from "flowbite-svelte";
+    import {
+        Footer,
+        FooterCopyright,
+        FooterLinkGroup,
+        FooterLink,
+    } from "flowbite-svelte";
 </script>
 
-<Footer class="relative
+<Footer
+    class="relative
     z-20
     mt-auto
     border-t border-white/10
@@ -10,11 +16,10 @@
     backdrop-blur-md dark:backdrop-blur-2xl
     custom-footer
     rounded-none
-    drop-shadow-xl">
-    <FooterCopyright href="/" by="Daniil Wins" year={2026}/>
-    <FooterLinkGroup
-        class="mt-3 flex flex-wrap items-center text-sm sm:mt-0"
-    >
+    drop-shadow-xl"
+>
+    <FooterCopyright href="/" by="Daniil Wins" year={2026} />
+    <FooterLinkGroup class="mt-3 flex flex-wrap items-center text-sm sm:mt-0">
         <FooterLink
             href="https://github.com/dalu-wins/svelte-homepage"
             target="_blank"
