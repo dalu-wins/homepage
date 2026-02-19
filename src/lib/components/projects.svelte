@@ -14,7 +14,8 @@
                 backdrop-blur-md dark:backdrop-blur-2xl
                 drop-shadow-xl
                 border border-white/20 dark:border-white/3
-                ring-1 ring-white/10 dark:ring-white/2"
+                ring-1 ring-white/10 dark:ring-white/2
+                backdrop-saturate-150 dark:backdrop-saturate-150"
         >
 
             <div class="text-4xl mb-4">{project.icon}</div>

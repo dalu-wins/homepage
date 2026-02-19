@@ -4,13 +4,16 @@
 </script>
 
 <div
-    class="rounded-4xl
+    class="max-lg:contents
+        rounded-4xl
+        w-fit
         backdrop-blur-md dark:backdrop-blur-2xl
         bg-white/20 dark:bg-black/20
         p-12
         shadow-2xl
         border border-white/20 dark:border-white/3
-        ring-1 ring-white/10 dark:ring-white/2"
+        ring-1 ring-white/10 dark:ring-white/2
+        backdrop-saturate-150 dark:backdrop-saturate-150"
 >
     <Timeline class="custom-timeline">
         {#each curriculum as item}

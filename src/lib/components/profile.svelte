@@ -16,7 +16,7 @@
 </script>
 
 <div
-    class="flex flex-col md:flex-row justify-center pt-12 gap-6 md:gap-12 w-full items-center lg:items-start lg:justify-start z-10"
+    class="flex flex-col md:flex-row justify-center pt-12 gap-6 md:gap-12 w-full items-center lg:items-start lg:justify-start z-10 pt-16 pb-6"
 >
     <div class="shrink-0 relative w-48 md:w-64 aspect-square">
         {#if !imageLoaded}

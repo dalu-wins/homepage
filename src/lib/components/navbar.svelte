@@ -17,7 +17,8 @@
         bg-white/20 dark:bg-black/20
         shadow-md
         z-20
-        max-md:backdrop-blur-none dark:max-md:backdrop-blur-none"
+        max-md:backdrop-blur-none dark:max-md:backdrop-blur-none
+        backdrop-saturate-150 dark:backdrop-saturate-150"
 >
     <NavBrand href="/">
         <span class="self-center text-xl font-semibold whitespace-nowrap m-4"
@@ -34,7 +35,8 @@
             ulClass="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium 
             max-md:backdrop-blur-2xl max-md:dark:backdrop-blur-2xl
             max-md:border max-md:border-white/5 max-md:dark:border-white/10
-            max-md:bg-white/10 max-md:dark:bg-black/20"
+            max-md:backdrop-saturate-150 dark:max-md:backdrop-saturate-150 
+            max-md:bg-white/70 max-md:dark:bg-black/60"
         >
             <NavLi
                 href="/"
