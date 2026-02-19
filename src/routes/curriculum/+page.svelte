@@ -5,7 +5,7 @@
     import Curriculum from "$lib/components/curriculum.svelte";
 </script>
 
-<div class="flex flex-col min-h-screen relative overflow-hidden p-4 container mx-auto px-8 grow gap-6">
+<div class="flex flex-col min-h-screen relative overflow-hidden p-4 container mx-auto grow gap-6">
     <Navbar />
 
     <main class="grow flex flex-col gap-6">
