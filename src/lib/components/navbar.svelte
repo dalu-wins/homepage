@@ -1,6 +1,7 @@
 <script>
 	import { Navbar, NavBrand, NavHamburger, DarkMode } from 'flowbite-svelte';
     import NavLinks from './navLinks.svelte';
+    import Hamburger from './Hamburger.svelte';
 
 	let menuOpen = $state(false);
 	const toggleMenu = () => (menuOpen = !menuOpen);
@@ -19,7 +20,7 @@
 		<DarkMode
 			class="glass-button mr-0 md:mr-6"
 		/>
-		<NavHamburger onclick={toggleMenu} class="md:hidden glass-button mr-6 z-15" />
+		<Hamburger onclick={toggleMenu} />
 	</div>
 
 	<NavLinks {menuOpen} />

@@ -20,7 +20,7 @@
                              ? 'text-black dark:text-white' 
                              : 'text-(--secondary-text) dark:text-(--secondary-text-dark)'}
                            hover:text-black hover:dark:text-white 
-                           hover:bg-(--bg-nav-hover) md:hover:bg-transparent"
+                           hover:glass-button md:hover:bg-transparent"
                     aria-current={isActive ? 'page' : undefined}
                 >
                     {link.name}
