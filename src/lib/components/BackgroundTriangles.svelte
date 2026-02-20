@@ -19,7 +19,7 @@
                 -(((i * 3) % count) / count + (random(s + 2) - 0.5) * 0.2) *
                 dur,
             size: 50 + (left / 100) * 180,
-            color: `hsl(${random(s + 3) * 360}, 45%, 60%)`,
+            color: `hsl(${random(s + 3) * 360}, 70%, 65%)`,
             rotation:
                 (random(s + 4) > 0.5 ? 1 : -1) * (180 + random(s + 2) * 90),
         };

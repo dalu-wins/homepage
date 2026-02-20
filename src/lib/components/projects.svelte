@@ -44,7 +44,7 @@
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="bg-(--bg-github-button) dark:bg-(--bg-github-button-dark) dark:text-white w-full mt-3"
+                class="bg-(--bg-github-button) dark:bg-(--bg-github-button-dark) dark:text-white w-full mt-3 drop-shadow-md"
             >
                 GitHub <ArrowRightOutline class="ms-2 h-5 w-5" />
             </Button>
