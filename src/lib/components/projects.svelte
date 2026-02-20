@@ -1,11 +1,11 @@
 <script>
     import { projects } from "$lib/display/projects";
-    import { Card, Badge, Button } from "flowbite-svelte";
+    import { Card, Button } from "flowbite-svelte";
     import { ArrowRightOutline } from "flowbite-svelte-icons";
 </script>
 
 <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 w-full justify-items-center z-10"
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 w-full justify-items-center z-10"
 >
     {#each projects as project}
         <Card

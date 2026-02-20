@@ -6,10 +6,10 @@
     import BackgroundTriangles from "$lib/components/BackgroundTriangles.svelte";
 </script>
 
-<div class="flex flex-col min-h-screen relative overflow-hidden p-4 container mx-auto grow gap-6">
+<div class="flex flex-col min-h-screen relative overflow-hidden p-4 container mx-auto grow gap-4">
     <Navbar />
 
-    <main class="grow flex flex-col gap-6">
+    <main class="grow flex flex-col gap-4">
         <Profile />
         <Projects />
     </main>
