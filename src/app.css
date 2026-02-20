@@ -11,8 +11,8 @@
 @plugin "flowbite/plugin";
 
 @theme {
-  --bg-default: #E0E0E0;
-  --bg-default-dark: #1B1B1B;
+  --bg-default: #D3D3D3;
+  --bg-default-dark: #101010;
 
   --bg-navbar: #FF000000;
   --bg-navbar-dark: #FF000000;

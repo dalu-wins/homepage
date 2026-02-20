@@ -1,7 +1,7 @@
 <script lang="ts">
     import { bgSettings } from "$lib/context/state.svelte";
 
-    export let count = 8;
+    export let count = 10;
 
     function random(seed: number) {
         const x = Math.sin(seed) * 10000;
@@ -11,15 +11,15 @@
     const triangles = Array.from({ length: count }).map((_, i) => {
         const s = i + 42;
         const left = i * (100 / count) + random(s) * (100 / count) * 0.6;
-        const dur = 25 + random(s + 1) * 100;
+        const dur = 35 + random(s + 1) * 100;
         return {
             left,
             duration: dur,
             delay:
                 -(((i * 3) % count) / count + (random(s + 2) - 0.5) * 0.2) *
                 dur,
-            size: 50 + (left / 100) * 180,
-            color: `hsl(${random(s + 3) * 360}, 70%, 65%)`,
+            size: 50 + random(s + 3) * 100,
+            color: `hsl(${random(s + 3) * 360}, 50%, 60%)`,
             rotation:
                 (random(s + 4) > 0.5 ? 1 : -1) * (180 + random(s + 2) * 90),
         };
@@ -28,9 +28,9 @@
 
 {#if bgSettings.visible}
     <div
-        class="fixed inset-0 pointer-events-none z-0 overflow-hidden"
+        class="fixed inset-x-0 bottom-0 pointer-events-none z-0 overflow-hidden h-svh"
     >
-        <div class="absolute right-0 w-1/3 h-full">
+        <div class="absolute right-0 w-full md:w-1/3 h-full">
             {#each triangles as t}
                 <div
                     class="triangle"
