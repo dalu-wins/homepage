@@ -30,7 +30,7 @@
     <div
         class="fixed inset-x-0 bottom-0 pointer-events-none z-0 overflow-hidden h-svh"
     >
-        <div class="absolute right-0 w-full md:w-1/3 h-full">
+        <div class="absolute right-0 w-full md:w-3/8 h-full">
             {#each triangles as t}
                 <div
                     class="triangle"
